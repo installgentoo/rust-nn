@@ -1,0 +1,17 @@
+[package]
+name = "Neural_Net"
+version = "0.1.0"
+authors = ["user <local@>"]
+edition = "2018"
+license = "MIT"
+
+[profile.release]
+panic = 'abort'
+
+[[bin]]
+name = "test_ai"
+path = "src/test_ai/main.rs"
+
+[dependencies]
+rand = "*"
+rand_xorshift = "*"
